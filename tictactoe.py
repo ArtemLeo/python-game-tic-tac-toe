@@ -21,6 +21,8 @@ def initial_state():
 def player(board):
     """
     Returns player who has the next turn on a board.
+    The player with fewer moves on the board goes next.
+    If both players have made the same number of moves, X goes next.
     """
     count_X = sum(row.count(X) for row in board)
     count_O = sum(row.count(O) for row in board)
@@ -30,6 +32,7 @@ def player(board):
 def actions(board):
     """
     Returns set of all possible actions (i, j) available on the board.
+    An action is represented as a tuple of two integers, indicating the row and column of the move.
     """
     possible_actions = set()
     for i in range(len(board)):
@@ -42,6 +45,8 @@ def actions(board):
 def result(board, action):
     """
     Returns the board that results from making move (i, j) on the board.
+    The move is made by the current player on a copy of the board.
+    Raises an exception if the action is invalid (i.e., not on an empty cell).
     """
     i, j = action
     if board[i][j] != EMPTY:
@@ -54,6 +59,8 @@ def result(board, action):
 def winner(board):
     """
     Returns the winner of the game, if there is one.
+    Checks all rows, columns, and diagonals for a winning line of three Xs or Os.
+    Returns 'X' if X wins, 'O' if O wins, and None otherwise.
     """
     lines = [
         # Rows
@@ -81,7 +88,8 @@ def winner(board):
 
 def terminal(board):
     """
-    Returns True if game is over, False otherwise.
+    Returns True if the game is over, False otherwise.
+    The game is over if there is a winner or if there are no empty cells left.
     """
     if winner(board) is not None:
         return True
@@ -94,6 +102,7 @@ def terminal(board):
 def utility(board):
     """
     Returns 1 if X has won the game, -1 if O has won, 0 otherwise.
+    This function assumes that the game is over.
     """
     winner_player = winner(board)
     if winner_player == X:
@@ -107,6 +116,7 @@ def utility(board):
 def minimax(board):
     """
     Returns the optimal action for the current player on the board.
+    Uses the minimax algorithm to determine the best move.
     """
     if terminal(board):
         return None
@@ -136,6 +146,10 @@ def minimax(board):
 
 
 def max_value(board):
+    """
+    Helper function for the minimax algorithm.
+    Returns the maximum utility value for the current board.
+    """
     if terminal(board):
         return utility(board)
     v = float('-inf')
@@ -145,6 +159,10 @@ def max_value(board):
 
 
 def min_value(board):
+    """
+    Helper function for the minimax algorithm.
+    Returns the minimum utility value for the current board.
+    """
     if terminal(board):
         return utility(board)
     v = float('inf')
