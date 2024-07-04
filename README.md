@@ -1,4 +1,4 @@
-<h1>Tic-Tac-Toe AI ❌⭕️</h1>
+<h1>The Game Tic-Tac-Toe AI ❌⭕️</h1>
 <ul>
    <li>Tic-Tac-Toe AI is a Python game where you play Tic-Tac-Toe against an AI opponent.</li>
    <li>Challenge yourself and see if you can beat the machine!</li>
