@@ -11,7 +11,7 @@
 ## How it Works:
 <ul>
    <li>The game uses search algorithms to calculate the best moves for the AI, providing a challenging opponent.</li>
-   <li>Don't underestimate it; the AI is programmed to win or draw!</li>
+   <li>Don't underestimate it, because the AI is programmed to win or draw!</li>
 </ul>
 
 
