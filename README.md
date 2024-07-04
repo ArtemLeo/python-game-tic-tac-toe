@@ -43,7 +43,7 @@ python runner.py
 ![Main](images/Screenshot_3.png)
 
 <ul>
-    <li>This will start the game and prompt you to move.</li>
+    <li>This will start the game and prompt you to make a move.</li>
     <li>The AI will make its move automatically after you.</li>
 </ul>
 
