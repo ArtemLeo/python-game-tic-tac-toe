@@ -7,7 +7,7 @@ automatically after you. Challenge yourself and see if you can beat the machine!
 
 ---
 
-### Game Images 🧩:
+### Game ScreenShots 🧩:
 
 <img src="images/Screenshot_1.png" alt="my_projects" width="600">
 
@@ -53,6 +53,8 @@ python runner.py
 ```
 
 ---
+
+### Game ScreenShots 🧩:
 
 <img src="images/Screenshot_3.png" alt="my_projects" width="600">
 
