@@ -1,13 +1,13 @@
 # 🧩 Tic-Tac-Toe ❌ ⭕️
 
-### Description 🧩:
+### 🧩 Description:
 
 Tic-Tac-Toe AI is a Python game where you play Tic-Tac-Toe against an AI opponent. The AI will make its move
 automatically after you. Challenge yourself and see if you can beat the machine!
 
 ---
 
-### Game ScreenShots 🧩:
+### 🧩 Game ScreenShots:
 
 <img src="images/Screenshot_1.png" alt="my_projects" width="600">
 
@@ -15,7 +15,7 @@ automatically after you. Challenge yourself and see if you can beat the machine!
 
 ---
 
-### To START Playing 🧩:
+### 🧩 To START Playing:
 
 <ul>
     <li><strong>Install Python 3.10 +</strong></li>
@@ -54,7 +54,7 @@ python runner.py
 
 ---
 
-### Game ScreenShots 🧩:
+### 🧩 Game ScreenShots:
 
 <img src="images/Screenshot_3.png" alt="my_projects" width="600">
 
